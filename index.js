@@ -16,7 +16,7 @@ function GetSavedUsername() {
 }
 
 function LoadUsername() {
-  var userName = GetSavedUsername
+  var userName = GetSavedUsername()
   usernameDisplay.innerHTML = userName
 }
 
