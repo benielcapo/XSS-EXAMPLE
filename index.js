@@ -18,13 +18,13 @@ function GetSavedUsername() {
 
 function LoadUsername() {
   var userName = GetSavedUsername()
-  usernameDisplay.innerHTML = userName
+  usernameDisplay.innerHTML = "Hello, " + userName
 }
 
 button.addEventListener("click", function() {
   var userName = GetTextBoxUserName()
   if (userName == "") {return}
-  SaveUsername(username)
+  SaveUsername(userName)
 })
 
 LoadUsername()
