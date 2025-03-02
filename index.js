@@ -12,6 +12,7 @@ function SaveUsername(username) {
 
 function GetSavedUsername() {
   var savedUsername = localStorage.getItem("username")
+  console.log("saved username is " + savedUsername)
   return savedUsername || ""
 }
 
